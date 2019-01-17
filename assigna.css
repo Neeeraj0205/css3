@@ -1,11 +1,49 @@
 *{
     background-color: khaki;
 }
+@keyframes forimg{
+    0%{
+        margin-top: 10px;
+        width: 20%;
+        
+    }
+    25%{
+        margin-top: 15px;
+        width: 22.5%
+    }
+    37.5%{
+        margin-top: 17.5px;
+        width: 23.75%
+    }
+    50%{
+        margin-top: 20px;
+        width: 25%
+    }
+    75%{
+        margin-top: 25px;
+        width: 27.5%
+    }
+    87.5%{
+        margin-top: 27.5px;
+        width: 28.75%
+    }
+    100%{
+        margin-top: 30px;
+        width: 30%
+    }
+}
 #img1{
+    top: 10px;
+    left: 500px;
+    position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:25%;
+    animation-name: forimg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; 
+   
+
 }
 .span{
     font-family:Arial, Helvetica, sans-serif;
@@ -27,6 +65,22 @@
     margin: 30px;
 
 }
+.span01{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: hotpink;
+    margin: 30px;
+
+
+}
+.span02{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+color: hotpink;
+margin: 30px;
+}
 .option{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -46,5 +100,54 @@
     color: hotpink;
     font-family: Arial, Helvetica, sans-serif;
     
+
+}
+@keyframes input{
+    0%{
+        border: 3px solid burlywood;
+    }
+    100%{
+        border: 3px hotpink;
+    }
+
+}
+.span:hover + .ip{
+    animation-name: input;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes forspan0{
+    0%{
+        color: burlywood;
+    }
+    50%{
+        color:lightpink;
+    }
+    100%{
+        color: hotpink;
+    }
+
+}
+#span6:hover ~ .span0{
+    animation-name: forspan0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#spant:hover + #table1{
+    animation-name: forspan0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+#span10:hover ~ .span01{
+    animation-name: forspan0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+#span15:hover ~ .span02{
+    animation-name: forspan0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 
 }
